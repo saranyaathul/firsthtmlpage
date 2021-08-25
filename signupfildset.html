@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>using fieldset</title>
+	<style>
+		form{
+			max-width: 300px;
+			margin:10px auto;
+			padding:10px 20px;
+			background: f4f7f8;
+			border-radius: 8px;
+			background-color: pink;
+		}
+		fieldset{
+			background-color: lightblue ;
+
+		}
+	</style>
+
+	
+</head>
+<body>
+	<form>
+
+	<h1><b>SIGN UP</b></h1>
+	<fieldset>
+
+		<label>Name   </label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" /><br>
+		<label>Email  </label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Email" /><br>
+		<label>Password</label>
+		<input type="Password" /><br>
+		<label>Age</label><br>
+		 <input type="radio" name="Age" value="under 13" />Under 13<br>
+		<input type="radio" name="Age" value="Over 13" />Over 13<br><br>
+		Bio<textarea rows="5" cols="20"></textarea> <br><br>
+		<label>Job Role</label>
+		<select>
+			
+			<option value=" front end developer">Front-End Devoloper</option>
+			<option value=" full stack developer">Full Stack Devoloper</option>
+
+		</select><br><br>
+		<label>interests:</label> <br>
+		<input type="checkbox" value="development">Development <br>
+		<input type="checkbox" value="design">Design <br>
+		<input type="checkbox" value="Business">Business <br>
+		<legend>YOUR PROFILE</legend>
+
+</fieldset>
+	 <center><input type="submit" value="SIGN UP">
+	  <input type="button" value="CLEAR"></center>
+
+
+</form>
+</body>
+</html>
