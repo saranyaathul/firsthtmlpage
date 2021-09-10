@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>palindrome</title>
+</head>
+<body>
+	<h1>palindrome</h1>
+	Enter number :<input id="n_input">
+	<button onclick="palin()">submit</button>
+</body>
+<script>
+	function palin()
+	 {
+		var a,b,n,temp=0;
+		n=Number(document.getElementById("n_input").value);
+		b=n;
+		while(n>0)
+		{
+			a=n%10;
+			n=parseInt(n/10);
+			temp=temp*10+a;
+
+		}
+		alert(temp)
+	}
+</script>
+</html>

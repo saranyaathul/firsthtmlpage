@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ifelsejs</title>
+</head>
+<body>
+	<h2>pop up my message</h2>
+	<p id="pop"></p>
+	<button onclick="po()">click me</button>
+	<script>
+		function po()
+		 {
+			var txt;
+			if (confirm("press ok"))
+			 {
+				txt="you pressed ok" ;
+
+			 }
+			else
+			{
+				txt="you pressed cancel";
+			}
+			document.getElementById('pop').innerHTML=txt;
+		}
+	</script>
+
+</body>
+</html>

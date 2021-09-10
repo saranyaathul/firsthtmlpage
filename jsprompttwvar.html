@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+</head>
+<body>
+	<h1>welcome you</h1>
+	<p id="demo"></p>
+	enter the number :
+	<input type="text" value="number">
+	<button type="button" onclick="myfn()">write it</button>
+	<script>
+		function myfn() {
+		
+		var txt;
+		var person=prompt("please enter your name","name")
+		if (person==null || person=="") {
+			txt="user cancelled the prompt";
+		}else{
+			txt="Hello   "+person+"  !How do you do ?";
+		}
+		document.getElementById("demo").innerHTML=txt;
+		document.getElementById("demo").style.color='green';
+		}
+	</script>
+
+</body>
+</html>

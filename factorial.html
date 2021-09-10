@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>factorial</title>
+</head>
+<body>
+<h1>FACTORIAL OF NUMBERS</h1>
+<p id="demo"></p>
+Enter the number :
+<input type="text" id="num"><br><br>
+<button onclick="factorl()"> FIND</button><br><br>
+the Answer is :
+<input type="text" id="factorial">
+
+</body>
+<script>
+	function factorl()
+	 {
+		var i,n;
+		var fact =1;
+		n=Number(document.getElementById("num").value)
+
+		for (var i =1; i <=n; i++) 
+		{
+            fact= fact*i;
+		
+		}
+		document.getElementById("factorial").value = fact;
+	}
+</script>
+</html>
